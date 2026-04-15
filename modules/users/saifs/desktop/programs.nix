@@ -9,6 +9,7 @@
         vesktop
         fuzzel
         spotify
+        sway-contrib.grimshot
       ];
 
       home.pointerCursor = {
