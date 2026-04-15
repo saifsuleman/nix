@@ -1,7 +1,7 @@
 { ... }:
 {
   flake.modules.homeManager.users-saifs-core-programs =
-    { pkgs, lib, ... }:
+    { pkgs, ... }:
     {
       home.packages = with pkgs; [
         neofetch
