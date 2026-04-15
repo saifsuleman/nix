@@ -15,6 +15,12 @@ output "eDP-1" {
     scale 1.5
 }
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 layout {
     gaps 8
     center-focused-column "never"
