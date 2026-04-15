@@ -1,19 +1,10 @@
 { ... }:
 {
   flake.modules.homeManager.users-saifs-core-programs =
-    { pkgs, ... }:
+    { pkgs, lib, ... }:
     {
       home.packages = with pkgs; [
         neofetch
-        go
-        rustup
-        zig
-        nodejs
-        gcc
-        python3
-        gnumake
-        claude-code
-        readline
         nil
         nixd
         jetbrains-mono
@@ -22,6 +13,17 @@
         tmux
         fastfetch
         bitwarden-cli
+
+        # devenv stuff, maybe move to shells...
+        go
+        rustup
+        zig
+        nodejs
+        gcc
+        (lib.lowPrio clang)
+        python3
+        gnumake
+        claude-code
       ];
     };
 }
