@@ -16,6 +16,7 @@
         playerctl
         brightnessctl
         bitwarden-desktop
+        obsidian
       ];
 
       home.pointerCursor = {
