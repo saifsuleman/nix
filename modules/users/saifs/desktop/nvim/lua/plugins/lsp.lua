@@ -10,7 +10,13 @@ vim.lsp.config("nil_ls", {
   root_markers = { "flake.nix", ".git" },
 })
 
-vim.lsp.enable({ "lua_ls", "nil_ls" })
+vim.lsp.config("rust_analyzer", {
+  cmd = { "rust-analyzer" },
+  filetypes = { "rust" },
+  root_markers = { "Cargo.toml", ".git" },
+})
+
+vim.lsp.enable({ "lua_ls", "nil_ls", "rust_analyzer" })
 
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
