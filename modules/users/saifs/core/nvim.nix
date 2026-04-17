@@ -1,6 +1,6 @@
 { ... }:
 {
-  flake.modules.homeManager.users-saifs-desktop-nvim =
+  flake.modules.homeManager.users-saifs-core-nvim =
     { pkgs, ... }:
     {
       programs.neovim = {

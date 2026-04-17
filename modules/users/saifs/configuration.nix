@@ -24,12 +24,12 @@
           with inputs.self.modules.homeManager;
           [
             users-saifs-core-programs
+            users-saifs-core-nvim
           ]
           ++ lib.optionals config.machine.desktop [
             # Desktop Only
             users-saifs-desktop-programs
             users-saifs-desktop-noctalia
-            users-saifs-desktop-nvim
             desktop-zen-browser
           ]
           ++ lib.optionals config.machine.linux [
